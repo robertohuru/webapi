@@ -7,11 +7,11 @@ namespace webapi.Utils
 {
     public class DatabaseConnectionUtil
     {
-        public static string server = "130.89.221.193";
+        public static string server = "";
         public static int port = 5432;
         public static string user = "postgres";
-        public static string password = "admin$";
-        public static string dbname = "maris_db";
+        public static string password = "";
+        public static string dbname = "";
 
         public static NpgsqlConnection GetConnection() {
             string connstring = String.Format("Server={0};Port={1};User Id={2};Password={3};Database={4}", server, port, user, password, dbname);
